@@ -2920,3 +2920,18 @@ a {
   margin-top: 10px;
   display: block;
 }
+
+.containerai {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-items: center;
+}
+.imager {
+  margin-right: 10px;
+
+}
+
+/* .general{
+  background-color: #1a1919;
+} */
