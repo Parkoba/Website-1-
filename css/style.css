@@ -2927,11 +2927,12 @@ a {
   align-items: center;
   align-items: center;
 }
+
 .imager {
   margin-right: 10px;
 
 }
 
-/* .general{
+.general {
   background-color: #1a1919;
-} */
+}
