@@ -1,33 +1,3 @@
-body{
-    background-color: rgb(177, 174, 174);
+header{
+  background-color: rgb(58, 56, 56);
 }
-.container-2 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  
-  .phone-img{
-    width: 50%;
-    max-width: 100%;
-    height: 70px;
-  }
-  
-  p {
-    width: 50%;
-    margin: 0 0 0 2rem;
-  }
-  @media screen and (max-width: 768px) {
-    .container-2 {
-      flex-direction: column;
-    }
-  
-    .phone-img, p {
-      width: 100%;
-    }
-  
-    p {
-      margin: 2rem 0 0 0;
-    }
-  }
-    
