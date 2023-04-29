@@ -2936,3 +2936,7 @@ a {
 .general {
   background-color: #1a1919;
 }
+
+.about-text{
+text-align: justify;
+}
