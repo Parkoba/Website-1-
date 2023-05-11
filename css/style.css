@@ -2937,6 +2937,13 @@ a {
   background-color: #1a1919;
 }
 
-.about-text{
-text-align: justify;
+.about-text {
+  text-align: justify;
+}
+
+.terms-content {
+  text-align: justify;
+  /* text-align: center; */
+  margin-left: 90px;
+  margin-right: 90px;
 }
