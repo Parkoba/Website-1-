@@ -2947,3 +2947,10 @@ a {
   margin-left: 90px;
   margin-right: 90px;
 }
+.app-download{
+  text-align: center;
+  background-color: #255BFE;
+  color: #000;
+  border-radius: 3px;
+  
+}
