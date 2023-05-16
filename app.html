@@ -113,6 +113,7 @@
                     <div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
                         <div class="mb-4">
                             <h3 class="h3 mb-4 text-black">Download our App </h3>
+
                             <p class="about-text">At our company, we understand the importance of quick and easy parking
                                 access. That's why we recommend downloading our app. It provides a seamless and
                                 convenient way to access all our services from your mobile device. With just a few taps,
@@ -128,107 +129,107 @@
                                 the countless benefits our app has to offer by downloading it now.
                             </p>
 
-                            <div class="button-div">
-                                <div class="button-div2">
-                                    <a href="https://www.appcreator24.com/app2620708-m6iux7"> <button
-                                            class="app-download">Get App </button></a>
-                                </div>
+                            <div class="parking-button">
+                                <a href="https://www.appcreator24.com/app2620708-m6iux7">
+                                    <h5>Download App</h5>
+                                </a>
                             </div>
-
                         </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <h2 class="footer-heading mb-4">About Us</h2>
+                            <p>Our mission is helping Nigeria curb The flow of traffic and illegal
+                                parking. </p>
+                        </div>
+                        <div class="col-md-3 ml-auto">
+                            <h2 class="footer-heading mb-4">Quick Links</h2>
+                            <ul class="list-unstyled">
+                                <li><a href="#about-section" class="smoothscroll">About Us</a></li>
+                                <li><a href="#services-section" class="smoothscroll">Services</a></li>
+                                <!-- <li><a href="#vision-s" class="smoothscroll">Testimonials</a></li> -->
+                                <li><a href="#contact-section" class="smoothscroll">Contact Us</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3">
+                            <h2 class="footer-heading mb-4">Follow Us</h2>
+                            <a href="https://www.facebook.com/profile.php?id=100090813684604" target="_blank"
+                                class="pl-0 pr-3"><span class="icon-facebook"></span></a>
+                            <a href="#" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
+                            <a href="https://www.youtube.com/channel/UColCHrH-pG-mz3FiewBThUw" target="_blank" class=" pl-3
+                        pr-3"><span class="icon-youtube-play"></span></a>
+                            <a href=" https://www.instagram.com/parkobaofficial/" target="_blank"
+                                class=" pl-3 pr-3"><span class="icon-instagram"></span></a>
+
+                            <!-- <a href="#" class="pl-3 pr-3"><span class="icon-linkedin"></span></a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <h2 class="footer-heading mb-4">Subscribe Newsletter</h2>
+                    <form name="submit-to-google-sheet" action="#" method="post" class="footer-subscribe">
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control border-secondary text-white bg-transparent"
+                                name="email" placeholder="Enter Email" aria-label="Enter Email"
+                                aria-describedby="button-addon2" required>
+                            <div class="input-group-append">
+                                <button class="btn btn-primary text-black" type="submit"
+                                    id="button-addon2">Send</button>
+                            </div>
+                        </div>
+                        <span class="newsletter" id="msg"></span>
+                    </form>
+                </div>
+                <script>
+                    const scriptURL =
+                        '<https://script.google.com/macros/s/AKfycbzAfe3hqO7mwLyMf8A9jbNArRr7VgElKBC2XJKC1S3UMjan5cJTxETpHiF4rkc3jXY98w/exec>'
+                    const form = document.forms['submit-to-google-sheet']
+                    const msg = document.getElementById("msg")
+
+                    form.addEventListener('submit', e => {
+                        e.preventDefault()
+                        fetch(scriptURL, {
+                                method: 'POST',
+                                body: new FormData(form)
+                            })
+                            .then(response => {
+                                msg.innerHTML = "Thank you for Subscribing!!!"
+                                setTimeout(function () {
+                                    msg.innerHTML = ""
+                                }, 5000)
+                                form.reset()
+                            })
+                            .catch(error => console.error('Error!', error.message))
+                    })
+                </script>
+            </div>
+            <div class="row pt-5 mt-5 text-center">
+                <div class="col-md-12">
+                    <div class="border-top pt-5">
+                        <p>
+                            Parkoba &copy;<script>
+                                document.write(new Date().getFullYear());
+                            </script> All rights reserved |<i class="icon-heart text-danger" aria-hidden="true"></i>
+                            Developed by <a href="https://oluwatobiloba2905.github.io/My-portfoilo/index.html"
+                                target="_blank" style="color: rgb(202,32,32);">Tobias</a>
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
-
-
-        <footer class="site-footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-9">
-                        <div class="row">
-                            <div class="col-md-5">
-                                <h2 class="footer-heading mb-4">About Us</h2>
-                                <p>Our mission is helping Nigeria curb The flow of traffic and illegal
-                                    parking. </p>
-                            </div>
-                            <div class="col-md-3 ml-auto">
-                                <h2 class="footer-heading mb-4">Quick Links</h2>
-                                <ul class="list-unstyled">
-                                    <li><a href="#about-section" class="smoothscroll">About Us</a></li>
-                                    <li><a href="#services-section" class="smoothscroll">Services</a></li>
-                                    <!-- <li><a href="#vision-s" class="smoothscroll">Testimonials</a></li> -->
-                                    <li><a href="#contact-section" class="smoothscroll">Contact Us</a></li>
-                                </ul>
-                            </div>
-                            <div class="col-md-3">
-                                <h2 class="footer-heading mb-4">Follow Us</h2>
-                                <a href="https://www.facebook.com/profile.php?id=100090813684604" target="_blank"
-                                    class="pl-0 pr-3"><span class="icon-facebook"></span></a>
-                                <a href="#" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
-                                <a href="https://www.youtube.com/channel/UColCHrH-pG-mz3FiewBThUw" target="_blank"
-                                    class=" pl-3
-                        pr-3"><span class="icon-youtube-play"></span></a>
-                                <a href=" https://www.instagram.com/parkobaofficial/" target="_blank"
-                                    class=" pl-3 pr-3"><span class="icon-instagram"></span></a>
-
-                                <!-- <a href="#" class="pl-3 pr-3"><span class="icon-linkedin"></span></a> -->
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <h2 class="footer-heading mb-4">Subscribe Newsletter</h2>
-                        <form name="submit-to-google-sheet" action="#" method="post" class="footer-subscribe">
-                            <div class="input-group mb-3">
-                                <input type="email" class="form-control border-secondary text-white bg-transparent"
-                                    name="email" placeholder="Enter Email" aria-label="Enter Email"
-                                    aria-describedby="button-addon2" required>
-                                <div class="input-group-append">
-                                    <button class="btn btn-primary text-black" type="submit"
-                                        id="button-addon2">Send</button>
-                                </div>
-                            </div>
-                            <span class="newsletter" id="msg"></span>
-                        </form>
-                    </div>
-                    <script>
-                        const scriptURL =
-                            '<https://script.google.com/macros/s/AKfycbzAfe3hqO7mwLyMf8A9jbNArRr7VgElKBC2XJKC1S3UMjan5cJTxETpHiF4rkc3jXY98w/exec>'
-                        const form = document.forms['submit-to-google-sheet']
-                        const msg = document.getElementById("msg")
-
-                        form.addEventListener('submit', e => {
-                            e.preventDefault()
-                            fetch(scriptURL, {
-                                    method: 'POST',
-                                    body: new FormData(form)
-                                })
-                                .then(response => {
-                                    msg.innerHTML = "Thank you for Subscribing!!!"
-                                    setTimeout(function () {
-                                        msg.innerHTML = ""
-                                    }, 5000)
-                                    form.reset()
-                                })
-                                .catch(error => console.error('Error!', error.message))
-                        })
-                    </script>
-                </div>
-                <div class="row pt-5 mt-5 text-center">
-                    <div class="col-md-12">
-                        <div class="border-top pt-5">
-                            <p>
-                                Parkoba &copy;<script>
-                                    document.write(new Date().getFullYear());
-                                </script> All rights reserved |<i class="icon-heart text-danger" aria-hidden="true"></i>
-                                Developed by <a href="https://oluwatobiloba2905.github.io/My-portfoilo/index.html"
-                                    target="_blank" style="color: rgb(202,32,32);">Tobias</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
+    </footer>
     </div>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/jquery-ui.js"></script>

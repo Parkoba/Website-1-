@@ -2947,14 +2947,59 @@ a {
   margin-left: 90px;
   margin-right: 90px;
 }
-.app-download{
-  text-align: center;
+
+.parking-button {
   background-color: #255BFE;
-  color: #000;
-  border-radius: 3px;
-  margin: 0;
-  padding: 0;
-  /* width: 150px; */
-  height: 45px;
- 
+  color: white;
+  border-radius: 15px;
+  padding: 5px;
+  width: 150px;
+  margin: auto;
+}
+
+.parking-button {
+  width: 10em;
+  position: relative;
+  height: 3.5em;
+  border: 3px ridge #149CEA;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  transition: 1s;
+  border-radius: 0.3em;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.parking-button::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 3%;
+  width: 95%;
+  height: 40%;
+  background-color: #ffffff;
+  transition: 0.5s;
+  transform-origin: center;
+}
+
+.parking-button::before {
+  content: "";
+  transform-origin: center;
+  position: absolute;
+  top: 80%;
+  left: 3%;
+  width: 95%;
+  height: 40%;
+  background-color: #ffffff;
+  transition: 0.5s;
+}
+
+.parking-button:hover::before,
+.parking-button:hover::after {
+  transform: scale(0)
+}
+
+.parking-button:hover {
+  box-shadow: inset 0px 0px 25px #1479EA;
 }
