@@ -293,19 +293,20 @@
  	var OnePageNavigation = function () {
  		var navToggler = $('.site-menu-toggle');
  		$("body").on("click", ".main-menu li a[href^='#'], .smoothscroll[href^='#'], .site-mobile-menu .site-nav-wrap li a", function (e) {
+ 			// Prevent the default anchor tag behavior
  			e.preventDefault();
 
- 			var hash = this.hash;
+ 			// Get the href attribute of the clicked link
+ 			var href = $(this).attr('href');
 
- 			$('html, body').animate({
- 				'scrollTop': $(hash).offset().top
- 			}, 600, 'easeInOutExpo', function () {
- 				window.location.hash = hash;
- 			});
-
+ 			// Navigate to the target page using the href value
+ 			window.location.href = href;
  		});
  	};
+
+ 	// Call the OnePageNavigation function to activate the navigation behavior
  	OnePageNavigation();
+
 
  	var siteScroll = function () {
 
