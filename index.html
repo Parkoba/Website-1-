@@ -178,6 +178,7 @@
       </div>
     </div>
 
+
     <div class="site-section cta-big-image" id="Booking">
       <div class="container">
         <div class="row mb-5">
@@ -251,12 +252,15 @@
 
               <div>
 
-                <a href="https://dace.com.ng/">
-                  <h2 class="section-title mb-3">
-                    Digital Art Competition & Exhibition</h2>
-                </a>
+                <!-- <a href="https://dace.com.ng/"> -->
+                <h6 class="section-title mb-3">
+                  Digital Art Competition & Exhibition</h6>
+                <!-- </a> -->
                 <p>The future of Art.</p>
-
+                <div data-aos="fade-up" data-aos-delay="100">
+                  <a href="https://dace.com.ng/#contact" class="btn smoothscroll btn-primary mr-2 mb-2">Contact Us
+                  </a>
+                </div>
                 <!-- <p><a href="#" class="btn btn-primary mr-2 mb-2">Learn More</a></p> -->
               </div>
 
@@ -295,7 +299,7 @@
                   <div class="unit-4-icon mr-4 mb-3"></div>
                   <div>
                     <h3>Customer Service Representative</h3>
-                    <p> Oluwatobiloba - <a href="tel:+234 9160206245">+234 9160206245</p></a>
+                    <p> Daniel - <a href="tel:+234 9160206245">+234 9160206245</p></a>
                   </div>
                 </div>
               </div>
@@ -519,25 +523,26 @@
           </div>
           <script>
             const scriptURL =
-              '<https://script.google.com/macros/s/AKfycbzAfe3hqO7mwLyMf8A9jbNArRr7VgElKBC2XJKC1S3UMjan5cJTxETpHiF4rkc3jXY98w/exec>'
-            const form = document.forms['submit-to-google-sheet']
-            const msg = document.getElementById("msg")
+              'https://script.google.com/macros/s/AKfycbzAfe3hqO7mwLyMf8A9jbNArRr7VgElKBC2XJKC1S3UMjan5cJTxETpHiF4rkc3jXY98w/exec';
+            const form = document.forms['submit-to-google-sheet'];
+            const msg = document.getElementById('msg');
 
             form.addEventListener('submit', e => {
-              e.preventDefault()
+              e.preventDefault();
               fetch(scriptURL, {
                   method: 'POST',
+                  mode: 'no-cors', // Add 'no-cors' mode
                   body: new FormData(form)
                 })
                 .then(response => {
-                  msg.innerHTML = "Thank you for Subscribing!!!"
+                  msg.innerHTML = 'Thank you for subscribing!';
                   setTimeout(function () {
-                    msg.innerHTML = ""
-                  }, 5000)
-                  form.reset()
+                    msg.innerHTML = '';
+                  }, 5000);
+                  form.reset();
                 })
-                .catch(error => console.error('Error!', error.message))
-            })
+                .catch(error => console.error('Error!', error.message));
+            });
           </script>
         </div>
         <div class="row pt-5 mt-5 text-center">

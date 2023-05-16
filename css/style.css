@@ -105,8 +105,8 @@ body:after {
 }
 
 .btn.btn-primary:hover {
-  background: #000;
-  border-color: #000;
+  background: #ED20FF;
+  border-color: #ED20FF;
   color: #fff;
 }
 
@@ -1111,7 +1111,7 @@ body:after {
 .site-block-tab .nav-item>a:hover,
 .site-block-tab .nav-item>a.active {
   border-bottom: 2px solid #255BFE;
-  color: #000;
+  color: #ED20FF;
 }
 
 .block-13,
@@ -1214,7 +1214,7 @@ body:after {
 .slide-one-item.home-slider .owl-prev:focus,
 .slide-one-item.home-slider .owl-next:hover,
 .slide-one-item.home-slider .owl-next:focus {
-  background: black;
+  background: #ED20FF;
 }
 
 .slide-one-item.home-slider:hover .owl-nav,
@@ -3002,4 +3002,66 @@ a {
 
 .parking-button:hover {
   box-shadow: inset 0px 0px 25px #1479EA;
+}
+
+.download-app {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #ED20FF;
+  border: none;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 20px#ED20FF;
+  cursor: pointer;
+  transition-duration: .3s;
+  overflow: hidden;
+  position: relative;
+}
+
+.svgIcon {
+  width: 12px;
+  transition-duration: .3s;
+}
+
+.svgIcon path {
+  fill: white;
+}
+
+.download-app:hover {
+  width: 140px;
+  border-radius: 50px;
+  transition-duration: .3s;
+  background-color: #1479EA;
+  align-items: center;
+}
+
+.download-app:hover .svgIcon {
+  width: 50px;
+  transition-duration: .3s;
+  transform: translateY(60%);
+}
+
+.download-app::before {
+  position: absolute;
+  top: -20px;
+  content: "Download";
+  color: white;
+  transition-duration: .3s;
+  font-size: 2px;
+}
+
+.download-app:hover::before {
+  font-size: 13px;
+  opacity: 1;
+  transform: translateY(30px);
+  transition-duration: .3s;
+}
+
+.download2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
