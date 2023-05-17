@@ -510,39 +510,44 @@
           </div>
           <div class="col-md-3">
             <h2 class="footer-heading mb-4">Subscribe Newsletter</h2>
-            <form name="submit-to-google-sheet" action="#" method="post" class="footer-subscribe">
+            <form name="submit-to-google-sheet" class="footer-subscribe">
               <div class="input-group mb-3">
                 <input type="email" class="form-control border-secondary text-white bg-transparent" name="email"
                   placeholder="Enter Email" aria-label="Enter Email" aria-describedby="button-addon2" required>
                 <div class="input-group-append">
-                  <button class="btn btn-primary text-black" type="submit" id="button-addon2">Send</button>
+                  <button class="btn btn-primary text-black" type="submit" id="button-addon2">submit</button>
                 </div>
               </div>
               <span class="newsletter" id="msg"></span>
             </form>
           </div>
           <script>
-            const scriptURL =
-              'https://script.google.com/macros/s/AKfycbzAfe3hqO7mwLyMf8A9jbNArRr7VgElKBC2XJKC1S3UMjan5cJTxETpHiF4rkc3jXY98w/exec';
-            const form = document.forms['submit-to-google-sheet'];
-            const msg = document.getElementById('msg');
+            // Function to handle form submission
+            function submitForm(event) {
+              event.preventDefault(); // Prevent default form submission
 
-            form.addEventListener('submit', e => {
-              e.preventDefault();
-              fetch(scriptURL, {
-                  method: 'POST',
-                  mode: 'no-cors', // Add 'no-cors' mode
-                  body: new FormData(form)
-                })
+              const emailInput = document.getElementById('email-input');
+              const email = emailInput.value;
+
+              // Call the Google Apps Script web app URL with the form data
+              fetch(
+                  'https://script.google.com/macros/s/AKfycbzAfe3hqO7mwLyMf8A9jbNArRr7VgElKBC2XJKC1S3UMjan5cJTxETpHiF4rkc3jXY98w/exec?email=' +
+                  encodeURIComponent(email))
                 .then(response => {
-                  msg.innerHTML = 'Thank you for subscribing!';
-                  setTimeout(function () {
-                    msg.innerHTML = '';
-                  }, 5000);
-                  form.reset();
+                  // Handle success response
+                  console.log('Form submitted successfully');
+                  // Clear the input field
+                  emailInput.value = '';
                 })
-                .catch(error => console.error('Error!', error.message));
-            });
+                .catch(error => {
+                  // Handle error
+                  console.error('Error submitting form:', error);
+                });
+            }
+
+            // Attach event listener to form submission
+            // const form = document.getElementById('subscribe-form');
+            // form.addEventListener('submit', submitForm);
           </script>
         </div>
         <div class="row pt-5 mt-5 text-center">
