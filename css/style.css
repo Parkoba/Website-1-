@@ -3004,60 +3004,61 @@ a {
   box-shadow: inset 0px 0px 25px #1479EA;
 }
 
-.download-app {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: #ED20FF;
-  border: none;
-  font-weight: 600;
-  display: flex;
+.playstore-button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
-  box-shadow: 0px 0px 20px#ED20FF;
-  cursor: pointer;
-  transition-duration: .3s;
-  overflow: hidden;
-  position: relative;
+  border: 2px solid #000;
+  border-radius: 9999px;
+  background-color: rgba(0, 0, 0, 1);
+  padding: 0.625rem 1.5rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  outline: 0;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  text-decoration: none;
 }
 
-.svgIcon {
-  width: 12px;
-  transition-duration: .3s;
+.playstore-button:hover {
+  background-color: transparent;
+  color: rgba(0, 0, 0, 1);
 }
 
-.svgIcon path {
-  fill: white;
+.icon {
+  height: 1.5rem;
+  width: 1.5rem;
 }
 
-.download-app:hover {
-  width: 140px;
-  border-radius: 50px;
-  transition-duration: .3s;
-  background-color: #1479EA;
-  align-items: center;
+.texts {
+  margin-left: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  line-height: 1;
 }
 
-.download-app:hover .svgIcon {
-  width: 50px;
-  transition-duration: .3s;
-  transform: translateY(60%);
+.text-1 {
+  margin-bottom: 0.25rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
-.download-app::before {
-  position: absolute;
-  top: -20px;
-  content: "Download";
-  color: white;
-  transition-duration: .3s;
-  font-size: 2px;
-}
-
-.download-app:hover::before {
-  font-size: 13px;
-  opacity: 1;
-  transform: translateY(30px);
-  transition-duration: .3s;
+.text-2 {
+  font-weight: 600;
 }
 
 .download2 {
