@@ -46,7 +46,7 @@
                 <div class="row align-items-center">
 
                     <div class="col-6 col-xl-2">
-                        <a href="index.html"> <img src="img/chek.jpg" class="mb-0 site-logo"><a href="index.html"
+                        <a href="#"> <img src="img/parkoba icon no bg  .png" class="mb-0 site-logo"><a href="index.html"
                                 class="h2 mb-0"><span class="text-primary"></span></a>
                             </img>
                         </a>
@@ -56,38 +56,20 @@
                         <nav class="site-navigation position-relative text-right" role="navigation">
 
                             <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
-                                <li><a href="index.html" class="nav-link">Home</a></li>
-                                <li class="has-children">
-                                    <a href="index.html" class="nav-link">About Us</a>
-                                    <ul class="dropdown">
-                                        <li><a href="index.html" class="nav-link">Booking Hours</a></li>
-                                        <!-- <li><a href="#pricing-section" class="nav-link">Services</a></li> -->
-                                        <!-- <li><a href="#faq-section" class="nav-link">FAQ</a></li> -->
-                                        <!-- <li class="has-children">
-                      <a href="#">More Links</a>
-                      <ul class="dropdown">
-                        <li><a href="#">Menu One</a></li>
-                        <li><a href="#">Menu Two</a></li>
-                        <li><a href="#">Menu Three</a></li>
-                      </ul>
-                    </li> -->
-                                    </ul>
+                                <li><a href="#home-section" class="nav-link">Home</a></li>
+                                <li>
+                                    <a href="#about-section" class="nav-link">About Us</a>
                                 </li>
-
-                                <!-- <li><a href="gallery.html" target="_blank" class="nav-link">Gallery</a></li> -->
-                                <li><a href="index.html" class="nav-link">Services</a></li>
-                                <!-- <li><a href="#testimonials-section" class="nav-link">Testimonials</a></li> -->
-                                <li><a href="index.html" class="nav-link">Contact</a></li>
-                                <!-- <li><a href="app.html" target="_blank" class="nav-link">Get Parking</a></li> -->
+                                <li><a href="#services-section" class="nav-link">Services</a></li>
+                                <li><a href="#contact-section" class="nav-link">Contact</a></li>
+                                <li><a href="Get-parking.html" class="nav-link">Get Parking</a></li>
+                                <li><a href="tc.html" class="nav-link">FAQ</a></li>
                             </ul>
                         </nav>
                     </div>
-
-
                     <div class="col-6 d-inline-block d-xl-none ml-md-0 py-3" style="position: relative; top: 3px;"><a
                             href="#" class="site-menu-toggle js-menu-toggle float-right"><span
                                 class="icon-menu h3"></span></a></div>
-
                 </div>
             </div>
 
@@ -127,7 +109,7 @@
                 <div class="row">
                     <div class="col-lg-6 mb-5" data-aos="fade-up" data-aos-delay="">
                         <!-- <figure class="circle-bg"> -->
-                            <img src="img/key.webp" alt="Image" class="img-fluid">
+                        <img src="img/key.webp" alt="Image" class="img-fluid">
                         <!-- </figure> -->
                     </div>
                     <div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
@@ -234,6 +216,7 @@
                                     method: 'POST',
                                     body: new FormData(form)
                                 })
+
                                 .then(response => {
                                     msg.innerHTML = "Thank you for Subscribing!!!"
                                     setTimeout(function () {
