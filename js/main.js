@@ -124,9 +124,6 @@
  			" - $" + $("#slider-range").slider("values", 1));
  	};
  	// siteSliderRange();
-
-
-
  	var siteCarousel = function () {
  		if ($('.nonloop-block-13').length > 0) {
  			$('.nonloop-block-13').owlCarousel({
