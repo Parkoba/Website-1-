@@ -1,518 +1,891 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <title>Parkoba</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
-  <link rel="shortcut icon" href="img/parkoba icon .jpg" type="image/x-icon">
-  <link rel="stylesheet" href="fonts/icomoon/style.css">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/jquery-ui.css">
-  <link rel="stylesheet" href="css/owl.carousel.min.css">
-  <link rel="stylesheet" href="css/owl.theme.default.min.css">
-  <link rel="stylesheet" href="css/owl.theme.default.min.css">
-  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
-  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
-  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
-  <link rel="stylesheet" href="css/aos.css">
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="utf-8">
+    <title>Parkoba - Car Parking Website </title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Rubik&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome-free-5.15.2-web/css/fontawesome.min.css">
+
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!--   Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-
-
-  <div id="overlayer"></div>
-  <div class="loader">
-    <div class="spinner-border text-primary" role="status">
-      <span class="sr-only">Loading...</span>
-    </div>
-  </div>
-
-
-  <div class="site-wrap">
-
-    <div class="site-mobile-menu site-navbar-target">
-      <div class="site-mobile-menu-header">
-        <div class="site-mobile-menu-close mt-3">
-          <span class="icon-close2 js-menu-toggle"></span>
-        </div>
-      </div>
-      <div class="site-mobile-menu-body"></div>
-    </div>
-
-
-    <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
-
-      <div class="container">
-        <div class="row align-items-center">
-
-          <div class="col-6 col-xl-2">
-            <a href="#"> <img src="img/parkoba icon no bg  .png" class="mb-0 site-logo"><a href="index.html"
-                class="h2 mb-0"><span class="text-primary"></span></a>
-              </img>
-            </a>
-          </div>
-
-          <div class="col-12 col-md-10 d-none d-xl-block">
-            <nav class="site-navigation position-relative text-right" role="navigation">
-
-              <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
-                <li><a href="#home-section" class="nav-link">Home</a></li>
-                <li>
-                  <a href="#about-section" class="nav-link">About Us</a>
-                </li>
-                <li><a href="#services-section" class="nav-link">Services</a></li>
-                <li><a href="#contact-section" class="nav-link">Contact</a></li>
-                <li><a href="app.html" class="nav-link">Get Parking</a></li>
-                <li><a href="FAQ.html" class="nav-link">FAQ</a></li>
-              </ul>
-            </nav>
-          </div>
-          <div class="col-6 d-inline-block d-xl-none ml-md-0 py-3" style="position: relative; top: 3px;"><a href="#"
-              class="site-menu-toggle js-menu-toggle float-right"><span class="icon-menu h3"></span></a></div>
-        </div>
-      </div>
-
-    </header>
-
-
-
-    <div class="site-blocks-cover overlay" style="background:url(img/dp.webp);" data-aos="fade" id="home-section">
-
-      <div class="container">
-        <div class="row align-items-center justify-content-center">
-          <div class="col-md-8 mt-lg-5 text-center">
-            <h1 class="text-uppercase" data-aos="fade-up">Welcome</h1>
-            <p class="mb-5 desc" data-aos="fade-up" data-aos-delay="100">to Parkoba</p>
-            <p class="mb-5 desc" data-aos="fade-up" data-aos-delay="100">Park with pride</p>
-            <div data-aos="fade-up" data-aos-delay="100">
-              <a href="app.html" class="btn smoothscroll btn-primary mr-2 mb-2">Book Parking </a>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-      <a href="#about-section" class="mouse smoothscroll">
-        <span class="mouse-icon">
-          <span class="mouse-wheel"></span>
-        </span>
-      </a>
-    </div>
-
-
-    <div class="site-section cta-big-image" id="about-section">
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-12 text-center" data-aos="fade">
-            <h2 class="section-title mb-3">About Us</h2>
-          </div>
-        </div>
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark py-3 px-lg-5 d-none d-lg-block">
         <div class="row">
-          <div class="col-lg-6 mb-5" data-aos="fade-up" data-aos-delay="">
-            <!-- <figure class="circle-bg"> -->
-            <img src="img/key.webp" alt="Image" class="img-fluid">
-            <!-- </figure> -->
-          </div>
-          <div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
-            <div class="mb-4">
-              <h3 class="h3 mb-4 text-black">About Parkoba</h3>
-              <p class="about-text">We are a small startup enterprise dedicated in helping Nigeria curb The flow of
-                traffic and illegal
-                parking. We believe that all of our customers deserve the highest level of service, and we are committed
-                to providing just that.Welcome to our parking website, your go-to destination for all your parking
-                needs. <br> We are dedicated to providing you with the best parking services that are safe, secure, and
-                convenient. Our website offers a user-friendly interface that allows you to quickly find and book
-                parking spaces in various locations around the city.
-                <br>
-                Our team consists of experienced professionals who are passionate about making your parking experience
-                stress-free and easy. We believe that parking should be hassle-free, which is why we offer a wide range
-                of parking options to choose from, including indoor and outdoor parking lots, valet parking, and hourly
-                or daily parking rates. <span> <button class="c-button c-button--gooey">
-                    <div class="c-button__blobs">
-                      <div></div>
-                      <div></div>
-                      <div></div>
+            <div class="col-md-6 text-center text-lg-left mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center">
+                    <a class="text-body pr-3" href="tel: +234-9160206245"><i
+                            class="fa fa-phone-alt mr-2"></i>+234-9160206245</a>
+                    <span class="text-body">|</span>
+                    <a class="text-body px-3" href="mailto: parkobaofficial@gmail.com"><i
+                            class="fa fa-envelope mr-2"></i>parkobaofficial@gmail.com</a>
+                </div>
+            </div>
+            <div class="col-md-6 text-center text-lg-right">
+                <div class="d-inline-flex align-items-center">
+                    <a class="text-body px-3" href="https://www.facebook.com/profile.php?id=100090328631678">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a class="text-body px-3" href="">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a class="text-body px-3" href="">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a class="text-body px-3" href="https://www.instagram.com/parkobaofficial/">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="text-body pl-3" href="">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid position-relative nav-bar p-0">
+        <div class="position-relative px-lg-5" style="z-index: 9;">
+            <nav class="navbar navbar-expand-lg bg-secondary navbar-dark py-3 py-lg-0 pl-3 pl-lg-5">
+                <a href="" class="navbar-brand">
+                    <img class="text-uppercase text-primary mb-1" src="img/logo.png" alt="Parkoba logo">
+
+                </a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto py-0">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="service.html" class="nav-item nav-link">Service</a>
+                         <!-- <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Cars</a>
+                            <div class="dropdown-menu rounded-0 m-0">
+                                <a href="car.html" class="dropdown-item">Car Parking</a>
+                                <a href="detail.html" class="dropdown-item">Car Reservations</a>
+                                <a href="booking.html" class="dropdown-item">Booking</a>
+                            </div>
+                        </div> -->
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
+                            <div class="dropdown-menu rounded-0 m-0">
+                                <a href="team.html" class="dropdown-item">The Team</a>
+                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
                     </div>
-                  </button>
-                  <a href="about.html"><button class="learn-more">
-                      <span class="circle" aria-hidden="true">
-                        <span class="icon arrow"></span>
-                      </span>
-                      <span class="button-text">Read More</span>
-                    </button></span></a>
-                <br>
-
-            </div>
-          </div>
+                </div>
+            </nav>
         </div>
-      </div>
     </div>
+    <!-- Navbar End -->
 
 
-    <div class="site-section cta-big-image" id="Booking">
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-12 text-center" data-aos="fade">
-            <h2 class="section-title mb-3">Booking Hours</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-6 mb-5" data-aos="fade-up" data-aos-delay="">
-            <!-- <figure class="circle-bg"> -->
-            <img src="img/space.webp" alt="Image" class="img-fluid">
-            <!-- </figure> -->
-          </div>
-          <div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
-            <div class="mb-4">
-              <h3 class="h3 mb-4 text-black">Booking Hours</h3>
-              <p>
-                <!-- Booking Hours: <br> -->
-                Mon - Fri: 7am - 9pm. <br>
-                Sat - Sun: 8am - 7pm </p>
+    <!-- Search Start -->
+    <div class="container-fluid bg-white pt-3 px-lg-5">
+        <div class="row mx-n2">
+            <div class="col-xl-2 col-lg-4 col-md-6 px-2">
+                <select class="custom-select px-4 mb-3" style="height: 50px;">
+                    <option selected>Pickup Location</option>
+                    <option value="1">Location 1</option>
+                    <option value="2">Location 2</option>
+                    <option value="3">Location 3</option>
+                </select>
             </div>
-          </div>
+            <div class="col-xl-2 col-lg-4 col-md-6 px-2">
+                <select class="custom-select px-4 mb-3" style="height: 50px;">
+                    <option selected>Drop Location</option>
+                    <option value="1">Location 1</option>
+                    <option value="2">Location 2</option>
+                    <option value="3">Location 3</option>
+                </select>
+            </div>
+            <div class="col-xl-2 col-lg-4 col-md-6 px-2">
+                <div class="date mb-3" id="date" data-target-input="nearest">
+                    <input type="text" class="form-control p-4 datetimepicker-input" placeholder="Pickup Date"
+                        data-target="#date" data-toggle="datetimepicker" />
+                </div>
+            </div>
+            <div class="col-xl-2 col-lg-4 col-md-6 px-2">
+                <div class="time mb-3" id="time" data-target-input="nearest">
+                    <input type="text" class="form-control p-4 datetimepicker-input" placeholder="Pickup Time"
+                        data-target="#time" data-toggle="datetimepicker" />
+                </div>
+            </div>
+            <div class="col-xl-2 col-lg-4 col-md-6 px-2">
+                <select class="custom-select px-4 mb-3" style="height: 50px;">
+                    <option selected>Select A Car</option>
+                    <option value="1">Car 1</option>
+                    <option value="2">Car 1</option>
+                    <option value="3">Car 1</option>
+                </select>
+            </div>
+            <div class="col-xl-2 col-lg-4 col-md-6 px-2">
+                <button class="btn btn-primary btn-block mb-3" type="submit" style="height: 50px;">Search</button>
+            </div>
         </div>
-      </div>
     </div>
-    <section class="site-section" id="services-section">
-      <div class="container">
+    <!-- Search End -->
 
-        <div class="row mb-5 justify-content-center">
-          <div class="col-md-7 text-center">
-            <h2 class="section-title mb-3" data-aos="fade-up" data-aos-delay="">Services</h2>
-            <p class="lead" data-aos="fade-up" data-aos-delay="100">This are some of our services
-            </p>
-          </div>
-        </div>
 
-        <div class="row">
-          <div class="col-lg-6 mb-5" data-aos="fade-up" data-aos-delay="">
-
-            <div class="owl-carousel slide-one-item-alt">
-              <img src="img/many.webp" alt="Image" class="img-fluid">
-              <!-- <img src="img/DACE.webp" alt="Image" class="img-fluid"> -->
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0" style="margin-bottom: 90px;">
+        <div id="header-carousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <video class="w-100" src="Vid/pexels-marian-croitoru-5607783 (1080p).mp4" autoPlay loop
+                        muted></video>
+                    <!-- <img class="w-100" src="img/carousel-1.jpg" alt="Image"> -->
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h4 class="text-white text-uppercase mb-md-3">Book A Spot </h4>
+                            <h1 class="display-1 text-white mb-md-4">Best Parking Space in Your Location</h1>
+                            <a href="" class="btn btn-primary py-md-3 px-md-5 mt-2">Reserve Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <video class="w-100" src="Vid/vid.mp4" autoPlay loop muted></video>
+                    <!-- <img class="w-100" src="img/carousel-2.jpg" alt="Image"> -->
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h4 class="text-white text-uppercase mb-md-3">Book A Spot</h4>
+                            <h1 class="display-1 text-white mb-md-4">Quality Spots with Unlimited surveillance</h1>
+                            <a href="" class="btn btn-primary py-md-3 px-md-5 mt-2">Reserve Spot Now</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <!-- <div class="custom-direction">
-              <a href="#" class="custom-prev"><span><span class="icon-keyboard_backspace"></span></span></a><a href="#"
-                class="custom-next"><span><span class="icon-keyboard_backspace"></span></span></a>
-            </div> -->
-
-          </div>
-          <div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
-
-            <div class="owl-carousel slide-one-item-alt-text">
-              <div>
-                <h2 class="section-title mb-3">Pre-Paid Parking Spot </h2>
-                <p>Fast and affordable</p>
-                <div data-aos="fade-up" data-aos-delay="100">
-                  <a href="app.html" class="btn smoothscroll btn-primary mr-2 mb-2">Book Parking </a>
+            <a class="carousel-control-prev" href="#header-carousel" data-slide="prev">
+                <div class="btn btn-dark" style="width: 45px; height: 45px;">
+                    <span class="carousel-control-prev-icon mb-n2"></span>
                 </div>
-
-                <!-- <p><a href="#" class="btn btn-primary mr-2 mb-2">Learn More</a></p> -->
-              </div>
-
-              <!-- <div>
-
-               
-                <h6 class="section-title mb-3">
-                  Digital Art Competition & Exhibition</h6>
-                
-                <p>The future of Art.</p>
-                <div data-aos="fade-up" data-aos-delay="100">
-                  <a href="https://dace.com.ng/#contact" class="btn smoothscroll btn-primary mr-2 mb-2">Contact Us
-                  </a>
-                </div>
-                
-              </div> -->
-
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="site-section">
-      <div class="container">
-        <div class="row mb-5">
-
-          <div class="col-lg-5 ml-auto mb-5 order-1 order-lg-2" data-aos="fade" data-aos="fade-up" data-aos-delay="">
-            <img src="img/Customer care.jpg" alt="Image" class="img-fluid rounded">
-          </div>
-          <div class="col-lg-6 order-2 order-lg-1" data-aos="fade">
-
-            <div class="row">
-              <div class="col-md-12 mb-md-5 mb-0 col-lg-6" data-aos="fade-up" data-aos-delay="100">
-                <div class="unit-4">
-                  <div class="unit-4-icon mr-4 mb-3"></div>
-                  <div>
-                    <h3>Customer Service Representative</h3>
-                    <p> Daniel - <a href="tel:+234 9160206245">+234 9160206245</p></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-    <!-- <section class="site-section testimonial-wrap" id="testimonials-section" data-aos="fade">
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-12 text-center">
-            <h2 class="section-title mb-3">Testimonials</h2>
-          </div>
-        </div>
-      </div>
-      <div class="slide-one-item home-slider owl-carousel">
-          <div>
-            <div class="testimonial">
-              
-              <blockquote class="mb-5">
-                <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</p>
-              </blockquote>
-
-              <figure class="mb-4 d-flex align-items-center justify-content-center">
-                <div><img src="images/person_3.jpg" alt="Image" class="w-50 img-fluid mb-3"></div>
-                <p>John Smith</p>
-              </figure>
-            </div>
-          </div>
-       
-         
-
-          
-
-        </div>
-    </section>     -->
-
-    <section class="site-section bg-light" id="contact-section" data-aos="fade">
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-12 text-center">
-            <h2 class="section-title mb-3">Contact Us</h2>
-          </div>
-        </div>
-        <div class="row mb-5">
-
-
-
-          <div class="col-md-4 text-center">
-            <p class="mb-4">
-              <span class="icon-room d-block h4 text-primary"></span>
-              <a
-                href="https://www.google.com/maps/place/Parkoba/@6.6050402,-30.3985287,4z/data=!4m10!1m2!2m1!1sparkoba!3m6!1s0x103b9382a6a47afb:0x1bb16e8240c37ad0!8m2!3d6.6050402!4d3.3514713!15sCgdwYXJrb2JhkgELcGFya2luZ19sb3TgAQA!16s%2Fg%2F11trp5llrc">
-                <span>12 Afolabi Aina St Ikeja, Lagos</span></a>
-            </p>
-          </div>
-          <div class="col-md-4 text-center">
-            <p class="mb-4">
-              <span class="icon-phone d-block h4 text-primary"></span>
-              <a href="tel:+234 8022230164">+234 8022230164</a>
-            </p>
-          </div>
-          <div class="col-md-4 text-center">
-            <p class="mb-0">
-              <span class="icon-mail_outline d-block h4 text-primary"></span>
-              <a href="mailto:parkobaofficail@gmail.com">parkobaofficail@gmail.com</a>
-            </p>
-          </div>
-        </div>
-
-        <!-- <div class="row">
-          <div class="col-md-12 mb-5">
-
-
-
-            <form action="#" class="p-5 bg-white">
-
-              <h2 class="h4 text-black mb-5">Contact Form</h2>
-
-              <div class="row form-group">
-                <div class="col-md-6 mb-3 mb-md-0">
-                  <label class="text-black" for="fname">First Name</label>
-                  <input type="text" id="fname" class="form-control">
-                </div>
-                <div class="col-md-6">
-                  <label class="text-black" for="lname">Last Name</label>
-                  <input type="text" id="lname" class="form-control">
-                </div>
-              </div>
-
-              <div class="row form-group">
-
-                <div class="col-md-12">
-                  <label class="text-black" for="email">Email</label>
-                  <input type="email" id="email" class="form-control">
-                </div>
-              </div>
-
-              <div class="row form-group">
-
-                <div class="col-md-12">
-                  <label class="text-black" for="subject">Subject</label>
-                  <input type="subject" id="subject" class="form-control">
-                </div>
-              </div>
-
-              <div class="row form-group">
-                <div class="col-md-12">
-                  <label class="text-black" for="message">Message</label>
-                  <textarea name="message" id="message" cols="30" rows="7" class="form-control"
-                    placeholder="Write your notes or questions here..."></textarea>
-                </div>
-              </div>
-
-              <div class="row form-group">
-                <div class="col-md-12">
-                  <input type="submit" value="Send Message" class="btn btn-primary btn-md text-white">
-                </div>
-              </div>
-
-
-            </form>
-          </div>
-
-        </div> -->
-      </div>
-    </section>
-
-
-    <footer class="site-footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-9">
-            <div class="row">
-              <div class="col-md-5">
-                <h2 class="footer-heading mb-4">About Us</h2>
-                <p>Our mission is helping Nigeria curb The flow of traffic and illegal
-                  parking. </p>
-              </div>
-
-              <div class="col-md-3 ml-auto">
-                <h2 class="footer-heading mb-4">Quick Links</h2>
-                <ul class="list-unstyled">
-
-                  <li><a href="#contact-section" class="smoothscroll">Contact Us</a></li>
-                  <li><a href="https://drive.google.com/file/d/1mO25DjjqNH7ULJmgB3cTCID4RJIg2MlE/view?usp=sharing"
-                      class="smoothscroll">Terms and Policy</a></li>
-                  <li><a href="tc.html" class="smoothscroll">Join us </a></li>
-                  <li><a href="tc.html" class="smoothscroll">FAQ </a></li>
-
-                </ul>
-              </div>
-              <div class="col-md-3">
-                <h2 class="footer-heading mb-4">Follow Us</h2>
-                <a href="https://www.facebook.com/profile.php?id=100090813684604" target="_blank"
-                  class="pl-0 pr-3"><span class="icon-facebook"></span></a>
-                <a href="#" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
-                <a href="https://www.youtube.com/channel/UColCHrH-pG-mz3FiewBThUw" target="_blank" class=" pl-3
-                  pr-3"><span class="icon-youtube-play"></span></a>
-                <a href=" https://www.instagram.com/parkobaofficial/" target="_blank" class=" pl-3 pr-3"><span
-                    class="icon-instagram"></span></a>
-
-                <!-- <a href="#" class="pl-3 pr-3"><span class="icon-linkedin"></span></a> -->
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-3">
-            <h2 class="footer-heading mb-4">Subscribe Newsletter</h2>
-            <form name="submit-to-google-sheet" class="footer-subscribe">
-              <div class="input-group mb-3">
-                <input type="email" class="form-control border-secondary text-white bg-transparent" name="email"
-                  placeholder="Enter Email" aria-label="Enter Email" aria-describedby="button-addon2" required>
-                <div class="input-group-append">
-                  <button class="btn btn-primary text-black" type="submit" id="button-addon2">submit</button>
-                </div>
-              </div>
-              <span class="newsletter" id="msg"></span>
-            </form>
-          </div>
-          <script>
-            // Function to handle form submission
-            function submitForm(event) {
-              event.preventDefault(); // Prevent default form submission
-
-              const emailInput = document.getElementById('email-input');
-              const email = emailInput.value;
-
-              // Call the Google Apps Script web app URL with the form data
-              fetch(
-                  'https://script.google.com/macros/s/AKfycbzAfe3hqO7mwLyMf8A9jbNArRr7VgElKBC2XJKC1S3UMjan5cJTxETpHiF4rkc3jXY98w/exec?email=' +
-                  encodeURIComponent(email))
-                .then(response => {
-                  // Handle success response
-                  console.log('Form submitted successfully');
-                  // Clear the input field
-                  emailInput.value = '';
-                })
-                .catch(error => {
-                  // Handle error
-                  console.error('Error submitting form:', error);
-                });
-            }
-
-            // Attach event listener to form submission
-            // const form = document.getElementById('subscribe-form');
-            // form.addEventListener('submit', submitForm);
-          </script>
-
-
-
-
-
-
-          <div class="download2">
-            <a class="playstore-button" href="https://apk.e-droid.net/apk/app2620708-m6iux7.apk?v=3">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="icon" viewBox="0 0 512 512">
-                <path
-                  d="M99.617 8.057a50.191 50.191 0 00-38.815-6.713l230.932 230.933 74.846-74.846L99.617 8.057zM32.139 20.116c-6.441 8.563-10.148 19.077-10.148 30.199v411.358c0 11.123 3.708 21.636 10.148 30.199l235.877-235.877L32.139 20.116zM464.261 212.087l-67.266-37.637-81.544 81.544 81.548 81.548 67.273-37.64c16.117-9.03 25.738-25.442 25.738-43.908s-9.621-34.877-25.749-43.907zM291.733 279.711L60.815 510.629c3.786.891 7.639 1.371 11.492 1.371a50.275 50.275 0 0027.31-8.07l266.965-149.372-74.849-74.847z">
-                </path>
-              </svg>
-              <span class="texts">
-                <span class="text-1">Download now </span>
-                <!-- <span class="text-2">Google Play</span> -->
-              </span>
             </a>
-          </div>
-
+            <a class="carousel-control-next" href="#header-carousel" data-slide="next">
+                <div class="btn btn-dark" style="width: 45px; height: 45px;">
+                    <span class="carousel-control-next-icon mb-n2"></span>
+                </div>
+            </a>
         </div>
-        <div class="row pt-5 mt-5 text-center">
-          <div class="col-md-12">
-            <div class="border-top pt-5">
-              <p>
-                Parkoba &copy;<script>
-                  document.write(new Date().getFullYear());
-                </script> All rights reserved |<i class="icon-heart text-danger" aria-hidden="true"></i> Developed by <a
-                  href="https://oluwatobiloba2905.github.io/My-portfoilo/index.html" target="_blank"
-                  style="color: rgb(202,32,32);">Tobias</a>
-              </p>
+    </div>
+    <!-- Carousel End -->
+
+
+    <!-- About Start -->
+    <div class="container-fluid py-5">
+        <div class="container pt-5 pb-3">
+            <h1 class="display-1 text-primary text-center">01</h1>
+            <h1 class="display-4 text-uppercase text-center mb-5">Welcome To <span class="text-primary">Parkoba</span>
+            </h1>
+            <div class="row justify-content-center">
+                <div class="col-lg-10 text-center">
+                    <img class="w-75 mb-4" src="img/about.png" alt="">
+                    <p>We are a small startup enterprise dedicated in helping Nigeria curb The flow of traffic and
+                        illegal parking. We believe that all of our customers deserve the highest level of service, and
+                        we are committed to providing just that.Welcome to our parking website, your go-to destination
+                        for all your parking needs.
+                    </p>
+                </div>
             </div>
-          </div>
+            <div class="row mt-3">
+                <div class="col-lg-4 mb-2">
+                    <div class="d-flex align-items-center bg-light p-4 mb-4" style="height: 150px;">
+                        <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary ml-n4 mr-4"
+                            style="width: 100px; height: 100px;">
+                            <i class="fa fa-2x fa-headset text-secondary"></i>
+                        </div>
+                        <h4 class="text-uppercase m-0">24/7 Car Parking Support</h4>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-2">
+                    <div class="d-flex align-items-center bg-secondary p-4 mb-4" style="height: 150px;">
+                        <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary ml-n4 mr-4"
+                            style="width: 100px; height: 100px;">
+                            <i class="fa fa-2x fa-money-check-alt text-secondary"></i>
+                        </div>
+                        <h4 class="text-light text-uppercase m-0">Very Affodable</h4>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-2">
+                    <div class="d-flex align-items-center bg-light p-4 mb-4" style="height: 150px;">
+                        <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary ml-n4 mr-4"
+                            style="width: 100px; height: 100px;">
+                            <i class="fa fa-2x fa-map-marker-alt text-secondary"></i>
+                        </div>
+                        <h4 class="text-uppercase m-0">Convinently Situated</h4>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </footer>
+    </div>
+    <!-- About End -->
 
-  </div> <!-- .site-wrap -->
 
-  <script src="js/jquery-3.3.1.min.js"></script>
-  <script src="js/jquery-ui.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.countdown.min.js"></script>
-  <script src="js/jquery.easing.1.3.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="js/jquery.fancybox.min.js"></script>
-  <script src="js/jquery.sticky.js"></script>
-  <script src="js/isotope.pkgd.min.js"></script>
-  <script src="js/main.js"></script>
+    <!-- Services Start -->
+    <div class="container-fluid py-5">
+        <div class="container pt-5 pb-3">
+            <h1 class="display-1 text-primary text-center">02</h1>
+            <h1 class="display-4 text-uppercase text-center mb-5">Our Services</h1>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-2">
+                    <div class="service-item d-flex flex-column justify-content-center px-4 mb-4">
+                        <div class="d-flex align-items-center justify-content-between mb-3">
+                            <div class="d-flex align-items-center justify-content-center bg-primary ml-n4"
+                                style="width: 80px; height: 80px;">
+                                <i class="fa fa-2x fa-parking text-secondary"></i>
+                            </div>
+                            <h1 class="display-2 text-white mt-n2 m-0">01</h1>
+                        </div>
+                        <h4 class="text-uppercase mb-3"> Parking Reservations </h4>
+                        <p class="m-0">Hassle-free parking starts with Parking Reservations. Choose the date, time, and
+                            location, and reserve your parking space with ease. Say goodbye to the stress of finding
+                            parking spaces in busy areas.
 
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-2">
+                    <div class="service-item active d-flex flex-column justify-content-center px-4 mb-4">
+                        <div class="d-flex align-items-center justify-content-between mb-3">
+                            <div class="d-flex align-items-center justify-content-center bg-primary ml-n4"
+                                style="width: 80px; height: 80px;">
+                                <i class="fa fa-2x fa-book text-secondary"></i>
+                            </div>
+                            <h1 class="display-2 text-white mt-n2 m-0">02</h1>
+                        </div>
+                        <h4 class="text-uppercase mb-3"> Pre Booking Parking</h4>
+                        <p class="m-0">Secure your parking spot in advance with our Pre Booking Parking service. Plan
+                            your schedule confidently, knowing that your parking space is reserved and waiting for you
+                            upon arrival.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-2">
+                    <div class="service-item d-flex flex-column justify-content-center px-4 mb-4">
+                        <div class="d-flex align-items-center justify-content-between mb-3">
+                            <div class="d-flex align-items-center justify-content-center bg-primary ml-n4"
+                                style="width: 80px; height: 80px;">
+                                <i class="fa fa-2x fa-money-check-alt text-secondary"></i>
+                            </div>
+                            <h1 class="display-2 text-white mt-n2 m-0">03</h1>
+                        </div>
+                        <h4 class="text-uppercase mb-3">Online Parking Payment</h4>
+                        <p class="m-0">Simplify your parking experience with our Online Parking Payment service. Pay
+                            securely and conveniently online, eliminating the need for cash transactions. Enjoy a
+                            seamless and efficient parking payment process.
+                        </p>
+                    </div>
+                </div>
+                <!-- <a href="service.html">
+                    <p class="m-0">See More>>></p>
+                </a> -->
+                <div class="col-lg-4 col-md-6 mb-2">
+                    <div class="service-item d-flex flex-column justify-content-center px-4 mb-4">
+                        <div class="d-flex align-items-center justify-content-between mb-3">
+                            <div class="d-flex align-items-center justify-content-center bg-primary ml-n4"
+                                style="width: 80px; height: 80px;">
+                                <i class="
+                                fa fa-2x fa-lock text-secondary"></i>
+                            </div>
+                            <h1 class="display-2 text-white mt-n2 m-0">04</h1>
+                        </div>
+
+                        <h4 class="text-uppercase mb-3">Secured Parking space</h4>
+                        <p class="m-0">Your vehicle's safety is our priority. Benefit from our Secured Parking Space
+                            service, offering monitored and secure parking facilities. Park with confidence, knowing
+                            that your vehicle is in a safe and protected environment.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-2">
+                    <div class="service-item d-flex flex-column justify-content-center px-4 mb-4">
+                        <div class="d-flex align-items-center justify-content-between mb-3">
+                            <div class="d-flex align-items-center justify-content-center bg-primary ml-n4"
+                                style="width: 80px; height: 80px;">
+                                <i class="fa fa-2x fa-bell text-secondary"></i>
+                            </div>
+                            <h1 class="display-2 text-white mt-n2 m-0">05</h1>
+                        </div>
+                        <h4 class="text-uppercase mb-3">Parking Notifications
+
+                        </h4>
+                        <p class="m-0">Receive instant notifications about your parking reservation, including
+                            reminders, updates, and directions to the parking location. Stay connected throughout your
+                            parking journey.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-2">
+                    <div class="service-item d-flex flex-column justify-content-center px-4 mb-4">
+                        <div class="d-flex align-items-center justify-content-between mb-3">
+                            <div class="d-flex align-items-center justify-content-center bg-primary ml-n4"
+                                style="width: 80px; height: 80px;">
+                                <i class="fa fa-2x fa-clock text-secondary"></i>
+                            </div>
+                            <h1 class="display-2 text-white mt-n2 m-0">06</h1>
+                        </div>
+                        <h4 class="text-uppercase mb-3">Real-Time Parking Availability:
+
+                        </h4>
+                        <p class="m-0">Stay informed about available parking spaces in real-time. Our service provides
+                            live updates on parking availability, helping you plan your parking in advance.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Services End -->
+
+
+    <!-- Banner Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="bg-banner py-5 px-4 text-center">
+                <div class="py-5">
+                    <h1 class="display-1 text-uppercase text-primary mb-4">50% OFF</h1>
+                    <h1 class="text-uppercase text-light mb-4">Special Offer For New Members</h1>
+                    <p class="mb-4">Use the promo code <span>
+                            <i>WEBSITE</i>
+                        </span></p>
+                    <a class="btn btn-primary mt-2 py-3 px-5" href="">Register Now</a>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Banner End -->
+
+
+    <!-- Choose your car  Start -->
+    <div class="container-fluid py-5">
+        <div class="container pt-5 pb-3">
+            <h1 class="display-1 text-primary text-center">03</h1>
+            <h1 class="display-4 text-uppercase text-center mb-5">Find Your Car</h1>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-2">
+                    <div class="rent-item mb-4">
+                        <img class="img-fluid mb-4" src="img/Honda.png" alt="Hnda Accord 2019">
+                        <h4 class="text-uppercase mb-4">Honda Accord</h4>
+                        <div class="d-flex justify-content-center mb-4">
+                            <div class="px-2">
+                                <i class="fa fa-car text-primary mr-1"></i>
+                                <span>2019</span>
+                            </div>
+                            <div class="px-2 border-left border-right">
+                                <i class="fa fa-cogs text-primary mr-1"></i>
+                                <span>AUTO</span>
+                            </div>
+                            <div class="px-2">
+                                <i class="fa fa-road text-primary mr-1"></i>
+                                <span>25K</span>
+                            </div>
+                        </div>
+                        <a class="btn btn-primary px-3" href="">&#8358 1,000/Day</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-2">
+                    <div class="rent-item active mb-4">
+                        <img class="img-fluid mb-4" src="img/Toyota camry.png" alt="Toyota Camry 2005">
+                        <h4 class="text-uppercase mb-4">Toyota Camry</h4>
+
+                        <div class="d-flex justify-content-center mb-4">
+                            <div class="px-2">
+                                <i class="fa fa-car text-primary mr-1"></i>
+                                <span>2005</span>
+                            </div>
+                            <div class="px-2 border-left border-right">
+                                <i class="fa fa-cogs text-primary mr-1"></i>
+                                <span>AUTO</span>
+                            </div>
+                            <div class="px-2">
+                                <i class="fa fa-road text-primary mr-1"></i>
+                                <span>25K</span>
+                            </div>
+                        </div>
+                        <a class="btn btn-primary px-3" href="">&#8358 1,000/Day</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-2">
+                    <div class="rent-item mb-4">
+                        <img class="img-fluid mb-4" src="img/toyoa corrolla.png" alt="Toyota corrolla 2010">
+                        <h4 class="text-uppercase mb-4">Toyota Corolla</h4>
+                        <div class="d-flex justify-content-center mb-4">
+                            <div class="px-2">
+                                <i class="fa fa-car text-primary mr-1"></i>
+                                <span>2010</span>
+                            </div>
+                            <div class="px-2 border-left border-right">
+                                <i class="fa fa-cogs text-primary mr-1"></i>
+                                <span>AUTO</span>
+                            </div>
+                            <div class="px-2">
+                                <i class="fa fa-road text-primary mr-1"></i>
+                                <span>25K</span>
+                            </div>
+                        </div>
+                        <a class="btn btn-primary px-3" href="">&#8358 1,000/Day</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-2">
+                    <div class="rent-item mb-4">
+                        <img class="img-fluid mb-4" src="img/Kiario.png" alt="Kia Rio">
+                        <h4 class="text-uppercase mb-4">Kia Rio</h4>
+                        <div class="d-flex justify-content-center mb-4">
+                            <div class="px-2">
+                                <i class="fa fa-car text-primary mr-1"></i>
+                                <span></span>
+                            </div>
+                            <div class="px-2 border-left border-right">
+                                <i class="fa fa-cogs text-primary mr-1"></i>
+                                <span>AUTO</span>
+                            </div>
+                            <div class="px-2">
+                                <i class="fa fa-road text-primary mr-1"></i>
+                                <span>25K</span>
+                            </div>
+                        </div>
+                        <a class="btn btn-primary px-3" href="">&#8358 1,000/Day</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-2">
+                    <div class="rent-item mb-4">
+                        <img class="img-fluid mb-4" src="img/Volkswagen.png" alt="Volkswagen">
+                        <h4 class="text-uppercase mb-4">Volkswagen Golf</h4>
+                        <div class="d-flex justify-content-center mb-4">
+                            <div class="px-2">
+                                <i class="fa fa-car text-primary mr-1"></i>
+                                <span>2012</span>
+                            </div>
+                            <div class="px-2 border-left border-right">
+                                <i class="fa fa-cogs text-primary mr-1"></i>
+                                <span>AUTO</span>
+                            </div>
+                            <div class="px-2">
+                                <i class="fa fa-road text-primary mr-1"></i>
+                                <span>25K</span>
+                            </div>
+                        </div>
+                        <a class="btn btn-primary px-3" href="">&#8358 1,000/Day</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-2">
+                    <div class="rent-item mb-4">
+                        <img class="img-fluid mb-4" src="img/sienna.png" alt="toyoa Sienna 2021">
+                        <h4 class="text-uppercase mb-4">Toyota Sienna </h4>
+                        <div class="d-flex justify-content-center mb-4">
+                            <div class="px-2">
+                                <i class="fa fa-car text-primary mr-1"></i>
+                                <span>2012</span>
+                            </div>
+                            <div class="px-2 border-left border-right">
+                                <i class="fa fa-cogs text-primary mr-1"></i>
+                                <span>AUTO</span>
+                            </div>
+                            <div class="px-2">
+                                <i class="fa fa-road text-primary mr-1"></i>
+                                <span>25K</span>
+                            </div>
+                        </div>
+                        <a class="btn btn-primary px-3" href="">&#8358 1,000/Day</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Choose your Car End -->
+
+
+    <!-- Team Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <h1 class="display-1 text-primary text-center">04</h1>
+            <h1 class="display-4 text-uppercase text-center mb-5">Meet Our Team</h1>
+            <div class="owl-carousel team-carousel position-relative" style="padding: 0 30px;">
+                <div class="team-item">
+                    <img class="img-fluid w-100" src="img/team-1 Alonge Oluwatobiloba .png" alt="">
+                    <div class="position-relative py-4">
+                        <h4 class="text-uppercase">Alonge Oluwatobiloba</h4>
+                        <p class="m-0">Developer / Designer</p>
+                        <div
+                            class="team-social position-absolute w-100 h-100 d-flex align-items-center justify-content-center">
+                            <a class="btn btn-lg btn-primary btn-lg-square mx-1"
+                                href="https://twitter.com/AlongeOluwatob7"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-lg btn-primary btn-lg-square mx-1"
+                                href="https://facebook.com/alonge.tobias/"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-lg btn-primary btn-lg-square mx-1"
+                                href="https://www.linkedin.com/in/tobias2905/"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-lg btn-primary btn-lg-square mx-1"
+                                href="https://www.instagram.com/oluwa_tobias/"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-item">
+                    <img class="img-fluid w-100" src="img/team-2 Chinaemerem chiebedolu .png" alt="">
+                    <div class="position-relative py-4">
+                        <h4 class="text-uppercase">Chinaemerem Chiebiedolu</h4>
+                        <p class="m-0">Developer</p>
+                        <div
+                            class="team-social position-absolute w-100 h-100 d-flex align-items-center justify-content-center">
+                            <a class="btn btn-lg btn-primary btn-lg-square mx-1"
+                                href="https://twitter.com/CHIBOY_JULY"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-lg btn-primary btn-lg-square mx-1"
+                                href="https://web.facebook.com/chiboy.chibx"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-lg btn-primary btn-lg-square mx-1"
+                                href="https://www.linkedin.com/in/chinaemerem-chiebidolu-802388258/"><i
+                                    class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-lg btn-primary btn-lg-square mx-1"
+                                href="https://www.instagram.com/chiebidoluchinaemerem/"><i
+                                    class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-item">
+                    <img class="img-fluid w-100" src="img/team-3.jpg" alt="">
+                    <div class="position-relative py-4">
+                        <h4 class="text-uppercase"></h4>
+                        <p class="m-0">Developer</p>
+                        <div
+                            class="team-social position-absolute w-100 h-100 d-flex align-items-center justify-content-center">
+                            <a class="btn btn-lg btn-primary btn-lg-square mx-1" href="#"><i
+                                    class="fab fa-twitter"></i></a>
+                            <a class="btn btn-lg btn-primary btn-lg-square mx-1" href="#"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-lg btn-primary btn-lg-square mx-1" href="#"><i
+                                    class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
+
+
+    <!-- Banner Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="row mx-0">
+                <div class="col-lg-6 px-0">
+                    <div class="px-5 bg-secondary d-flex align-items-center justify-content-between"
+                        style="height: 350px;">
+                        <img class="img-fluid flex-shrink-0 ml-n5 w-50 mr-4" src="img/banner-left.png" alt="">
+                        <div class="text-right">
+                            <h3 class="text-uppercase text-light mb-3">Have a Parking Space?</h3>
+                            <p class="mb-4">If you're interested in earning money through Parkoba, sign up and list your
+                                parking space or any extra home space on Parkoba.</p>
+                            <a class="btn btn-primary py-2 px-4" href="app.parkoba.com">Register Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 px-0">
+                    <div class="px-5 bg-dark d-flex align-items-center justify-content-between" style="height: 350px;">
+                        <div class="text-left">
+                            <h3 class="text-uppercase text-light mb-3">Looking for a Parking spot?</h3>
+                            <p class="mb-4">Don't stress about finding a parking spot. You can easily find available
+                                spaces near you or where you're going and book them ahead of time with Parkoba
+                            </p>
+                            <a class="btn btn-primary py-2 px-4" href="">Start Now</a>
+                        </div>
+                        <img class="img-fluid flex-shrink-0 mr-n5 w-50 ml-4" src="img/banner-right.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Banner End -->
+
+
+    <!-- Testimonial Start -->
+    <!-- <div class="container-fluid py-5">
+        <div class="container py-5">
+            <h1 class="display-1 text-primary text-center">05</h1>
+            <h1 class="display-4 text-uppercase text-center mb-5">Our Client's Say</h1>
+            <div class="owl-carousel testimonial-carousel">
+                <div class="testimonial-item d-flex flex-column justify-content-center px-4">
+                    <div class="d-flex align-items-center justify-content-between mb-3">
+                        <img class="img-fluid ml-n4" src="img/testimonial-1.jpg" alt="">
+                        <h1 class="display-2 text-white m-0 fa fa-quote-right"></h1>
+                    </div>
+                    <h4 class="text-uppercase mb-2">Client Name</h4>
+                    <i class="mb-2">Profession</i>
+                    <p class="m-0">Kasd dolor no lorem nonumy sit labore tempor at justo rebum rebum stet, justo elitr
+                        dolor amet sit sea sed</p>
+                </div>
+                <div class="testimonial-item d-flex flex-column justify-content-center px-4">
+                    <div class="d-flex align-items-center justify-content-between mb-3">
+                        <img class="img-fluid ml-n4" src="img/testimonial-2.jpg" alt="">
+                        <h1 class="display-2 text-white m-0 fa fa-quote-right"></h1>
+                    </div>
+                    <h4 class="text-uppercase mb-2">Client Name</h4>
+                    <i class="mb-2">Profession</i>
+                    <p class="m-0">Kasd dolor no lorem nonumy sit labore tempor at justo rebum rebum stet, justo elitr
+                        dolor amet si t sea sed</p>
+                </div>
+                <div class="testimonial-item d-flex flex-column justify-content-center px-4">
+                    <div class="d-flex align-items-center justify-content-between mb-3">
+                        <img class="img-fluid ml-n4" src="img/testimonial-3.jpg" alt="">
+                        <h1 class="display-2 text-white m-0 fa fa-quote-right"></h1>
+                    </div>
+                    <h4 class="text-uppercase mb-2">Client Name</h4>
+                    <i class="mb-2">Profession</i>
+                    <p class="m-0">Kasd dolor no lorem nonumy sit labore tempor at justo rebum rebum stet, justo elitr
+                        dolor amet sit sea sed</p>
+                </div>
+                <div class="testimonial-item d-flex flex-column justify-content-center px-4">
+                    <div class="d-flex align-items-center justify-content-between mb-3">
+                        <img class="img-fluid ml-n4" src="img/testimonial-4.jpg" alt="">
+                        <h1 class="display-2 text-white m-0 fa fa-quote-right"></h1>
+                    </div>
+                    <h4 class="text-uppercase mb-2">Client Name</h4>
+                    <i class="mb-2">Profession</i>
+                    <p class="m-0">Kasd dolor no lorem nonumy sit labore tempor at justo rebum rebum stet, justo elitr
+                        dolor amet sit sea sed</p>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Testimonial End -->
+
+
+    <!-- Contact Start -->
+    <div class="container-fluid py-5">
+        <div class="container pt-5 pb-3">
+            <h1 class="display-1 text-primary text-center">05</h1>
+            <h1 class="display-4 text-uppercase text-center mb-5">Contact Us</h1>
+            <div class="row">
+                <div class="col-lg-7 mb-2">
+                    <div class="contact-form bg-light mb-4" style="padding: 30px;">
+                        <form>
+                            <div class="row">
+                                <div class="col-6 form-group">
+                                    <input type="text" class="form-control p-4" placeholder="Your Name"
+                                        required="required">
+                                </div>
+                                <div class="col-6 form-group">
+                                    <input type="email" class="form-control p-4" placeholder="Your Email"
+                                        required="required">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control p-4" placeholder="Subject" required="required">
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control py-3 px-4" rows="5" placeholder="Message"
+                                    required="required"></textarea>
+                            </div>
+                            <div>
+                                <button class="btn btn-primary py-3 px-5" type="submit">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-5 mb-2">
+                    <div class="bg-secondary d-flex flex-column justify-content-center px-5 mb-4"
+                        style="height: 435px;">
+                        <div class="d-flex mb-3">
+                            <i class="fa fa-2x fa-map-marker-alt text-primary flex-shrink-0 mr-3"></i>
+                            <div class="mt-n1">
+                                <h5 class="text-light">Head Office</h5>
+                                <p>Lagos Nigeria</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <i class="fa fa-2x fa-map-marker-alt text-primary flex-shrink-0 mr-3"></i>
+                            <div class="mt-n1">
+                                <h5 class="text-light">Branch Office</h5>
+                                <p>Lagos Nigeria</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <i class="fa fa-2x fa-envelope-open text-primary flex-shrink-0 mr-3"></i>
+                            <div class="mt-n1">
+                                <h5 class="text-light">Customer Service</h5>
+                                <p>parkobaofficial@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <i class="fa fa-2x fa-envelope-open text-primary flex-shrink-0 mr-3"></i>
+                            <div class="mt-n1">
+                                <h5 class="text-light">Return & Refund</h5>
+                                <p class="m-0">parkobaofficial@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact End -->
+
+
+    <!-- Vendor Start -->
+    <!-- <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="owl-carousel vendor-carousel">
+                <div class="bg-light p-4">
+                    <img src="img/vendor-1.png" alt="">
+                </div>
+                <div class="bg-light p-4">
+                    <img src="img/vendor-2.png" alt="">
+                </div>
+                <div class="bg-light p-4">
+                    <img src="img/vendor-3.png" alt="">
+                </div>
+                <div class="bg-light p-4">
+                    <img src="img/vendor-4.png" alt="">
+                </div>
+                <div class="bg-light p-4">
+                    <img src="img/vendor-5.png" alt="">
+                </div>
+                <div class="bg-light p-4">
+                    <img src="img/vendor-6.png" alt="">
+                </div>
+                <div class="bg-light p-4">
+                    <img src="img/vendor-7.png" alt="">
+                </div>
+                <div class="bg-light p-4">
+                    <img src="img/vendor-8.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Vendor End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-secondary py-5 px-sm-3 px-md-5" style="margin-top: 90px;">
+        <div class="row pt-5">
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h3 class="text-uppercase text-light mb-4">Get In Touch</h3>
+                <p class="mb-2"><i class="fa fa-map-marker-alt text-white mr-3"></i> Lagos, Nigeria</p>
+                <a href="tel: +234-9160206245 ">
+                    <p class="mb-2"><i class="fa fa-phone-alt text-white mr-3"></i>+234-9160206245</p>
+                </a>
+                <a href="mailto:parkobaofficial@gmail.com">
+                    <p><i class="fa fa-envelope text-white mr-3"></i>parkobaofficial@gmail.com</p>
+                </a>
+                <h6 class="text-uppercase text-white py-2">Follow Us</h6>
+                <div class="d-flex justify-content-start">
+                    <a class="btn btn-lg btn-dark btn-lg-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-lg btn-dark btn-lg-square mr-2"
+                        href="https://www.facebook.com/profile.php?id=100090328631678"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-lg btn-dark btn-lg-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-lg btn-dark btn-lg-square" href="https://www.instagram.com/parkobaofficial/"><i
+                            class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="text-uppercase text-light mb-4">Useful Links</h4>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-body mb-2" href="Privacy Policy.html"><i
+                            class="fa fa-angle-right text-white mr-2"></i>Privacy
+                        Policy</a>
+                    <a class="text-body mb-2" href="Terms and condition.html"><i
+                            class="fa fa-angle-right text-white mr-2"></i>Terms &
+                        Conditions</a>
+                    <!-- <a class="text-body mb-2" href="Faq.html"><i class="fa fa-angle-right text-white mr-2"></i>FAQ</a> -->
+                    <a class="text-body mb-2" href="#"><i class="fa fa-angle-right text-white mr-2"></i>Register your
+                        Parking Spot</a>
+                    <a class="text-body mb-2" href="#"><i class="fa fa-angle-right text-white mr-2"></i> Booking
+                        Cancelation & Refunds</a>
+                    <a class="text-body" href="Faq.html"><i class="fa fa-angle-right text-white mr-2"></i>Help &
+                        FQAs</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="text-uppercase text-light mb-4">Car Gallery</h4>
+                <div class="row mx-n1">
+                    <div class="col-4 px-1 mb-2">
+                        <a href=""><img class="w-100" src="img/gallery-1.jpg" alt=""></a>
+                    </div>
+                    <div class="col-4 px-1 mb-2">
+                        <a href=""><img class="w-100" src="img/gallery-2.jpg" alt=""></a>
+                    </div>
+                    <div class="col-4 px-1 mb-2">
+                        <a href=""><img class="w-100" src="img/gallery-3.jpg" alt=""></a>
+                    </div>
+                    <div class="col-4 px-1 mb-2">
+                        <a href=""><img class="w-100" src="img/gallery-4.jpg" alt=""></a>
+                    </div>
+                    <div class="col-4 px-1 mb-2">
+                        <a href=""><img class="w-100" src="img/gallery-5.jpg" alt=""></a>
+                    </div>
+                    <div class="col-4 px-1 mb-2">
+                        <a href=""><img class="w-100" src="img/gallery-6.jpg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="text-uppercase text-light mb-4">Newsletter</h4>
+                <p class="mb-4">Subscribe to our Newsletter to get daily Updates, News and Tips.</p>
+                <div class="w-100 mb-3">
+                    <div class="input-group">
+                        <input type="text" class="form-control bg-dark border-dark" style="padding: 25px;"
+                            placeholder="Your Email">
+                        <div class="input-group-append">
+                            <button class="btn btn-primary text-uppercase px-3">Sign Up</button>
+                        </div>
+                    </div>
+                </div>
+                <i>Thanks for Subscribing</i>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-dark py-4 px-sm-3 px-md-5">
+        <p class="mb-2 text-center text-body">&copy; <a href="#">Parkoba</a>. All Rights Reserved.</p>
+        <p class="m-0 text-center text-body">Designed and Developed by <a href="https://bit.ly/Alongetobias">Tobias</a>
+        </p>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!--   Javascript -->
+    <script src="js/main.js"></script>
 </body>
 
 </html>
