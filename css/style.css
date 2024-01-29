@@ -313,3 +313,36 @@ h6,
     background: linear-gradient(rgba(28, 30, 50, .9), rgba(28, 30, 50, .9)), url(../img/bg-banner.jpg);
     background-attachment: fixed;
 }
+
+
+/* Vision and Mision */
+
+.containe {
+    display: flex;
+    max-width: 1000px;
+    /* Increased max-width */
+    width: 80%;
+    /* Adjust the width as needed */
+    margin: auto;
+    /* Center the container horizontally */
+    /* height: 80vh; */
+    /* Adjust the height as needed */
+}
+
+.text-colum {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.image-colum {
+    flex: 1;
+    box-sizing: border-box;
+}
+
+.img2 {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
