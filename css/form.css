@@ -118,7 +118,7 @@ body {
     right: 0;
     width: 2px;
     height: 100%;
-    background: linear-gradient(180deg, transparent, #03e9f4);
+    background: linear-gradient(180deg, transparent, #011533);
     animation: btn-anim2 1s linear infinite;
     animation-delay: .25s
 }
@@ -139,7 +139,7 @@ body {
     right: -100%;
     width: 100%;
     height: 2px;
-    background: linear-gradient(270deg, transparent, #03e9f4);
+    background: linear-gradient(270deg, transparent, #ADBFDB);
     animation: btn-anim3 1s linear infinite;
     animation-delay: .5s
 }
